@@ -4,10 +4,10 @@ import './App.css';
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import BasicInfo from './Components/BasicInfo';
-import AdditionalQuestions from './Components/AdditionalQuestions';
-import EnteredDetails from './Components/EnteredDetails';
-import ThankYouPage from './Components/ThankYouPage';
+import BasicInfo from './components/BasicInfo';
+import AdditionalQuestions from './components/AdditionalQuestions';
+import EnteredDetails from './components/EnteredDetails';
+import ThankYouPage from './components/ThankYouPage';
 import { About } from './components/About';
 
 function App() {
