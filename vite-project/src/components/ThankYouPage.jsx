@@ -4,11 +4,11 @@ import React from 'react';
 
 function ThankYouPage() {
   return (
-    <div className="container-fluid qform">
-            <div className="col-md-5 m-auto">
-                <div className="mt-3">
-                    <div className="card text-left h-100">
-                        <div className="card-body my-3">
+    <div className=" h-screen w-screen flex flex-col justify-center items-center">
+            <div className="">
+                <div className="">
+                    <div className="">
+                        <div className="text-blue-400 ">
                             <h3>Thank You for your Response!</h3>
                             <h6>You may close this tab now.</h6>
                         </div>

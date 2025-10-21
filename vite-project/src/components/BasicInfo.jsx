@@ -27,17 +27,17 @@ export default function BasicInfo({ addBasicData }) {
   }
 
   return (
-    <div className="container-fluid qform">
-      <div className="col-md-5 m-auto">
-        <div className="mt-3">
-          <div className="card text-left h-100">
-            <div className="card-body my-3">
+    <div className="w-screen justify-center flex flex-col align-middle items-center h-screen">
+      <div className=" justify-center items-center flex flex-col ">
+        <div className="">
+          <div className="">
+            <div className="flex flex-col justify-between">
               <form onSubmit={submit}>
-                <label htmlFor="">
+                <label htmlFor="" className='text-blue-400'>
                   <h4>Basic Details</h4>
                 </label>
-                <div className="form-group my-3">
-                  <label htmlFor="">
+                <div className="flex justify-between mt-4">
+                  <label htmlFor="" className='text-blue-400'>
                     <b>1.</b> Name
                   </label>
                   {/* Input field for name */}
@@ -46,13 +46,13 @@ export default function BasicInfo({ addBasicData }) {
                     name="name"
                     value={name}
                     onChange={(e) => { setName(e.target.value) }}
-                    className='form-control my-2'
+                    className='outline-blue-400'
                     placeholder='Enter your Name'
                     autoComplete='off'
                   />
                 </div>
-                <div className="form-group my-3">
-                  <label htmlFor="">
+                <div className="flex justify-between mt-4">
+                  <label htmlFor="" className='text-blue-400'>
                     <b>2.</b> Email
                   </label>
                   {/* Input field for email */}
@@ -61,13 +61,13 @@ export default function BasicInfo({ addBasicData }) {
                     name='email'
                     value={email}
                     onChange={(e) => { setEmail(e.target.value) }}
-                    className='form-control my-2'
+                    className='outline-blue-400'
                     placeholder='Enter your Email'
                     autoComplete='off'
                   />
                 </div>
-                <div className="form-group my-3">
-                  <label htmlFor="">
+                <div className="flex justify-between mt-4">
+                  <label htmlFor="" className='text-blue-400'>
                     <b>3.</b> Contact No.
                   </label>
                   {/* Input field for contact number */}
@@ -76,19 +76,19 @@ export default function BasicInfo({ addBasicData }) {
                     name='contact'
                     value={contact}
                     onChange={(e) => { setContact(e.target.value) }}
-                    className='form-control my-2'
+                    className='outline-blue-400'
                     placeholder='Enter your Contact No.'
                     autoComplete='off'
                   />
                 </div>
                 {/* Submit button */}
-                <button type='submit' className='btn btn-success mx-3'>Next</button>
+                <button type='submit' className='bg-blue-400 text-blue-400'>Next</button>
               </form>
               {/* Step indicators */}
-              <center>
-                <span className="badge badge-pill bg-success"><b>1</b></span>
-                <span className="badge rounded-pill disabled">2</span>
-                <span className="badge rounded-pill disabled">3</span>
+              <center className='m-3'>
+                <span className="text-blue-400"><b>1</b></span>
+                <span className="">2</span>
+                <span className="">3</span>
               </center>
             </div>
           </div>

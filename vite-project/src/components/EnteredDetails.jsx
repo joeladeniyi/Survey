@@ -13,39 +13,39 @@ export default function EnteredDetails(props) {
   };
 
   return (
-    <div className="container-fluid qform">
-      <div className="col-md-5 m-auto">
-        <div className="mt-3">
-          <div className="card text-left h-100">
-            <div className="card-body my-3">
-              <h4>Entered Details</h4>
+    <div className="h-screen w-screen flex flex-col justify-center items-center">
+      <div className="">
+        <div className="">
+          <div className="">
+            <div className="flex flex-col">
+              <h4 className='text-blue-400 '>Entered Details</h4>
 
               {/* Display basicData */}
               <p>
-                <b>Name:</b> {props.data.name}
+                <b className='text-blue-400 mr-4'>Name:</b> {props.data.name}
               </p>
               <p>
-                <b>Email:</b> {props.data.email}
+                <b className='text-blue-400 mr-4'>Email:</b> {props.data.email}
               </p>
               <p>
-                <b>Contact No.:</b> {props.data.contact}
+                <b className='text-blue-400 mr-4'>Contact No.:</b> {props.data.contact}
               </p>
 
-              <h4>Responses</h4>
+              <h4 className='text-blue-400 mr-4'>Responses</h4>
 
               {/* Display questionData */}
               <p>
-                <b>Profession:</b> {props.questiondData.profession}
+                <b className='text-blue-400 mr-4'>Profession:</b > {props.questiondData.profession}
               </p>
               <p>
-                <b>Interests:</b> {props.questiondData.interest}
+                <b className='text-blue-400 mr-4'>Interests:</b> {props.questiondData.interest}
               </p>
               <p>
-                <b>Reference:</b> {props.questiondData.reference}
+                <b className='text-blue-400 mr-4'>Reference:</b> {props.questiondData.reference}
               </p>
 
               {/* Submit button */}
-              <button type="submit" onClick={submit} className="btn btn-success">
+              <button type="submit" onClick={submit} className="bg-blue-400 text-blue-400 ">
                 Submit
               </button>
 
@@ -53,7 +53,7 @@ export default function EnteredDetails(props) {
               <center>
                 <span className="badge rounded-pill disabled">1</span>
                 <span className="badge rounded-pill disabled">2</span>
-                <span className="badge badge-pill bg-success">
+                <span className="bg-blue-400 rounded-2xl">
                   <b>3</b>
                 </span>
               </center>

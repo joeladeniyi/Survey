@@ -58,19 +58,19 @@ export default function AdditionalQuestions({ addQuestionData }) {
   };
 
   return (
-    <div className="container-fluid qform">
-      <div className="col-md-5 m-auto">
-        <div className="mt-3">
-          <div className="card text-left h-100">
-            <div className="card-body">
+    <div className="h-screen w-screen flex flex-col justify-center items-center">
+      <div className="  ">
+        <div className="">
+          <div className="">
+            <div className="shadow-amber-200">
               <form onSubmit={submit}>
-                <label htmlFor="">
+                <label htmlFor="" className='text-blue-400'>
                   <h4>Additional Questions</h4>
                 </label>
 
                 {/* Profession options */}
-                <div className="form-group m-2" onChange={handleProfessionChange}>
-                  <label htmlFor="q1">
+                <div className="" onChange={handleProfessionChange}>
+                  <label htmlFor="q1" >
                     <b>1.</b> What is your profession?
                   </label>
                   <br />
@@ -79,10 +79,10 @@ export default function AdditionalQuestions({ addQuestionData }) {
                     name="ProfessionRadio"
                     id="student"
                     autoComplete="off"
-                    className="m-2"
+                    className="bg-blue-400"
                     value="Student"
                   />
-                  <label htmlFor="student"> Student</label>
+                  <label htmlFor="student" className="ml-3"> Student</label>
                   <br />
                   {/* Other options for profession with text input */}
                   <input
@@ -90,35 +90,35 @@ export default function AdditionalQuestions({ addQuestionData }) {
                     name="ProfessionRadio"
                     id="sde"
                     autoComplete="off"
-                    className="m-2"
+                    className="bg-blue-400"
                     value="Software Engineer"
                   />
-                  <label htmlFor="sde"> Software Engineer</label>
+                  <label htmlFor="sde" className="ml-3"> Software Engineer</label>
                   <br />
                   <input
                     type="radio"
                     name="ProfessionRadio"
                     id="teacher"
                     autoComplete="off"
-                    className="m-2"
+                    className="bg-blue-400"
                     value="Teacher"
                   />
-                  <label htmlFor="teacher"> Teacher</label>
+                  <label htmlFor="teacher" className="ml-3"> Teacher</label>
                   <br />
                   <input
                     type="radio"
                     name="ProfessionRadio"
                     id="others"
                     autoComplete="off"
-                    className="m-2"
+                    className="bg-blue-400"
                     value="Others"
                   />
-                  <label htmlFor="others">  Others:</label>
+                  <label htmlFor="others" className="ml-3">  Others:</label>
                   <input
                     type="text"
                     id="otherProfession"
                     autoComplete="off"
-                    className="form-control m-2"
+                    className="outline-blue-400"
                     value={otherProfession}
                     onChange={(e) => { setOtherProfession(e.target.value) }}
                   />
@@ -126,7 +126,7 @@ export default function AdditionalQuestions({ addQuestionData }) {
                 </div>
 
                 {/* Interest options */}
-                <div className="form-group m-2" onChange={handleInterestChange}>
+                <div className="" onChange={handleInterestChange}>
                   <label htmlFor="q2">
                     <b>2.</b> What are your interests?
                   </label>
@@ -136,10 +136,10 @@ export default function AdditionalQuestions({ addQuestionData }) {
                     name="interestRadio"
                     id="dsa"
                     autoComplete="off"
-                    className="m-2"
+                    className="bg-blue-400"
                     value="DSA"
                   />
-                  <label htmlFor="dsa"> DSA</label>
+                  <label htmlFor="dsa" className="ml-3"> DSA</label>
                   <br />
                   {/* Other options for interest with text input */}
                   <input
@@ -147,45 +147,45 @@ export default function AdditionalQuestions({ addQuestionData }) {
                     name="interestRadio"
                     id="fullstack"
                     autoComplete="off"
-                    className="m-2"
+                    className="mr-3 bg-blue-400"
                     value="Full Stack Development"
                   />
-                  <label htmlFor="fullstack"> Full Stack Development</label>
+                  <label htmlFor="fullstack" className="ml-3"> Full Stack Development</label>
                   <br />
                   <input
                     type="radio"
                     name="interestRadio"
                     id="dataScience"
                     autoComplete="off"
-                    className="m-2"
+                    className="bg-blue-400"
                     value="Data Science"
                   />
-                  <label htmlFor="dataScience"> Data Science</label>
+                  <label htmlFor="dataScience" className="ml-3"> Data Science</label>
                   <br />
                   <input
                     type="radio"
                     name="interestRadio"
                     id="compeProgramming"
                     autoComplete="off"
-                    className="m-2"
+                    className="bg-blue-400"
                     value="Competitive Programming"
                   />
-                  <label htmlFor="compeProgramming"> Competitive Programming</label>
+                  <label htmlFor="compeProgramming" className="ml-3"> Competitive Programming</label>
                   <br />
                   <input
                     type="radio"
                     name="interestRadio"
                     id="others"
                     autoComplete="off"
-                    className="m-2"
+                    className="bg-blue-400"
                     value="Others"
                   />
-                  <label htmlFor="others"> Others:</label>
+                  <label htmlFor="others" className="ml-3"> Others:</label>
                   <input
                     type="text"
                     id="otherInterest"
                     autoComplete="off"
-                    className="form-control m-2"
+                    className="outline-blue-400"
                     value={otherInterest}
                     onChange={(e) => { setOtherInterest(e.target.value) }}
                   />
@@ -193,7 +193,7 @@ export default function AdditionalQuestions({ addQuestionData }) {
                 </div>
 
                 {/* Reference options */}
-                <div className="form-group m-2" onChange={handleReferenceChange}>
+                <div className="" onChange={handleReferenceChange}>
                   <label htmlFor="q3">
                     <b>3.</b> Where did you hear about us?
                   </label>
@@ -203,45 +203,45 @@ export default function AdditionalQuestions({ addQuestionData }) {
                     name="referenceRadio"
                     id="news"
                     autoComplete="off"
-                    className="m-2"
+                    className="bg-blue-400"
                     value="News Paper"
                   />
-                  <label htmlFor="news"> News Paper</label>
+                  <label htmlFor="news" className="ml-3"> News Paper</label>
                   <br />
                   <input
                     type="radio"
                     name="referenceRadio"
                     id="LinkedIn"
                     autoComplete="off"
-                    className="m-2"
+                    className="bg-blue-400"
                     value="LinkedIn"
                   />
-                  <label htmlFor="LinkedIn"> LinkedIn</label>
+                  <label htmlFor="LinkedIn" className="ml-3"> LinkedIn</label>
                   <br />
                   <input
                     type="radio"
                     name="referenceRadio"
                     id="Instagram"
                     autoComplete="off"
-                    className="m-2"
+                    className="bg-blue-400"
                     value="Instagram"
                   />
-                  <label htmlFor="Instagram"> Instagram</label>
+                  <label htmlFor="Instagram" className="ml-3"> Instagram</label>
                   <br />
                   <input
                     type="radio"
                     name="referenceRadio"
                     id="others"
                     autoComplete="off"
-                    className="m-2"
+                    className="bg-blue-400"
                     value="Others"
                   />
-                  <label htmlFor="others"> Others:</label>
+                  <label htmlFor="others" className="ml-3"> Others:</label>
                   <input
                     type="text"
                     id="otherReference"
                     autoComplete="off"
-                    className="form-control m-2"
+                    className="outline-blue-400"
                     value={otherReference}
                     onChange={(e) => { setOtherReference(e.target.value) }}
                   />
@@ -249,18 +249,18 @@ export default function AdditionalQuestions({ addQuestionData }) {
                 </div>
 
                 {/* Submit button */}
-                <button type="submit" className="btn btn-success mx-3">
+                <button type="submit" className="text-blue-400">
                   Next
                 </button>
               </form>
 
               {/* Progress indicators */}
               <center>
-                <span className="badge rounded-pill disabled">1</span>
-                <span className="badge badge-pill bg-success">
+                <span className="">1</span>
+                <span className="">
                   <b>2</b>
                 </span>
-                <span className="badge rounded-pill disabled">3</span>
+                <span className="">3</span>
               </center>
             </div>
           </div>
